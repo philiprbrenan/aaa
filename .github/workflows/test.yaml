@@ -3,7 +3,7 @@ jobs:
     name: Install perl module
     runs-on: ubuntu-latest
     steps:
-      name: Install modules
+    - name: Install modules
       run:
       - echo Started
 name: Test Perl
