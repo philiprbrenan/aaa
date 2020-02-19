@@ -1,19 +1,15 @@
-name: Greeting from Mona
-
-on: push
-
 jobs:
-  my-job:
-    name: My Job
+  job:
+    name: Install perl module
     runs-on: ubuntu-latest
     steps:
-    - name: Print a greeting
-      env:
-        MY_VAR: Hi there! My name is
-        FIRST_NAME: Mona
-        MIDDLE_NAME: The
-        LAST_NAME: Octocat
+      name: Install modules
       run: |
-        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-        perl -V
-        perl -v
+        echo Started
+        cpan -i YAML::XS <<END2
+        yes
+        sudo
+        END2
+name: Test Perl
+on: push
+
