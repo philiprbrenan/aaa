@@ -5,13 +5,6 @@ jobs:
     steps:
       name: Install modules
       run:
-      - |
-        echo Started
-        cpan -i YAML::XS <<END2
-        yes
-        sudo
-        END2
+      - echo Started
 name: Test Perl
 on: push
-
-
