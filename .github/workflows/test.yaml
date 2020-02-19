@@ -6,6 +6,6 @@ jobs:
     steps:
     - name: Install modules
       run: |
-        cpan install YAML::XS <<<"yes\nsudo\n"
+        sudo cpan install YAML::XS <<<yes
 name: Test Perl
 on: push
