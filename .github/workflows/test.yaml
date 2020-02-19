@@ -8,5 +8,8 @@ jobs:
       run: |
         sudo apt install cpanminus
         cpanm -S Data::Table::Text
+        sudo apt install libexpat1-dev
+        cpanm -S Data::Edit::Xml
+        cpanm -S GitHub::Crud
 name: Test Perl
 on: push
