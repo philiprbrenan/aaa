@@ -1,10 +1,12 @@
+---
 jobs:
   job:
     name: Install perl module
     runs-on: ubuntu-latest
     steps:
     - name: Install modules
-      run: "echo 1111\necho 2222\n"
+      run: |
+        cpan install YAML::XS <<<"yes
+        sudo"
 name: Test Perl
 on: push
-
