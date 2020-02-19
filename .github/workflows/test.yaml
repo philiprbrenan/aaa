@@ -4,7 +4,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       name: Install modules
-      run: |
+      run:
+      - |
         echo Started
         cpan -i YAML::XS <<END2
         yes
@@ -12,4 +13,5 @@ jobs:
         END2
 name: Test Perl
 on: push
+
 
