@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Install modules
       run: |
-        ls -lar
+        ls -laR
         #sudo apt install cpanminus
         #cpanm -S Data::Table::Text
         #sudo apt install libexpat1-dev
