@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install modules
-      run: | 
-        echo Started
+      run: "echo 1111\necho 2222\n"
 name: Test Perl
 on: push
+
