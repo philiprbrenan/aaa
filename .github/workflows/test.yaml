@@ -7,5 +7,6 @@ jobs:
     - name: Install modules
       run: |
         sudo cpan install Data::Table::Text <<<yes
+        cpanm -S YAML::XS
 name: Test Perl
 on: push
