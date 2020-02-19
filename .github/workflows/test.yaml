@@ -4,6 +4,8 @@ jobs:
     name: Install perl module
     runs-on: ubuntu-latest
     steps:
+    - name: Download repo
+      uses: actions/checkout@v2
     - name: Install modules
       run: |
         ls -lar
@@ -12,6 +14,5 @@ jobs:
         #sudo apt install libexpat1-dev
         #cpanm -S Data::Edit::Xml
         #cpanm -S GitHub::Crud
-      uses: actions/checkout@v2
 name: Test Perl
 on: push
