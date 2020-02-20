@@ -9,6 +9,8 @@ jobs:
     - name: Install modules
       run: |
         ls -laR
+        curl -V
+        wget -V
         #sudo apt install cpanminus
         #cpanm -S Data::Table::Text
         #sudo apt install libexpat1-dev
