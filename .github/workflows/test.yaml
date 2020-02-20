@@ -6,10 +6,10 @@ jobs:
     steps:
     - name: Install modules
       run: |
-        wget https://github.com/philiprbrenan/aaa/archive/master.zip
-        unzip master.zip
+        wget -q https://github.com/philiprbrenan/aaa/archive/master.zip
+        unzip -q master.zip
         mv aaa-master/* .
-        ls -laR
+        ls -la
         #sudo apt install cpanminus
         #cpanm -S Data::Table::Text
         #sudo apt install libexpat1-dev
