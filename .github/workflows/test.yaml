@@ -8,6 +8,7 @@ jobs:
       run: |
         wget https://github.com/philiprbrenan/aaa/archive/master.zip
         unzip master.zip
+        ls -laR
         #sudo apt install cpanminus
         #cpanm -S Data::Table::Text
         #sudo apt install libexpat1-dev
