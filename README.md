@@ -239,7 +239,9 @@
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         lambda_q : float, optional
 
@@ -259,7 +261,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -319,7 +323,9 @@
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         where : string, optional
 
@@ -339,7 +345,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -388,13 +396,13 @@
 
 
 
-            <p><b>Input</b>: l_dist, np.array with the distance along the magnetic field-line
+            input: l_dist, np.array with the distance along the magnetic field-line
 
                    x_vec,  vector with the R, phi and Z initial positions
 
 
 
-            <p><b>Return</b>: dx_dl_rhs, the right-hand side of the ode to solve.
+            return: dx_dl_rhs, the right-hand side of the ode to solve.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -416,13 +424,13 @@
 
 
 
-            <p><b>Input</b>: l_dist, np.array with the distance along the magnetic field-line
+            input: l_dist, np.array with the distance along the magnetic field-line
 
                    x_vec,  vector with the R, phi and Z initial positions
 
 
 
-            <p><b>Return</b>: intersect_wall, returns 0 if any wall surface is intersected,
+            return: intersect_wall, returns 0 if any wall surface is intersected,
 
                                     otherwise returns a float (the event function of
 
@@ -503,7 +511,7 @@
 
 
 
-        <p><b>Input</b>: self,  a reference to the object itself
+        input: self,  a reference to the object itself
 
                psi_p, the flux surface of the LCFS, standard is psi_p = 1.005 (otherwise the field-line
 
@@ -511,7 +519,7 @@
 
 
 
-        <p><b>Return</b>: Rcross, a list with the outer and inner radial position of the mid-plane LCFS.
+        return: Rcross, a list with the outer and inner radial position of the mid-plane LCFS.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -533,11 +541,11 @@
 
 
 
-        <p><b>Input</b>: self, a reference the object itself
+        input: self, a reference the object itself
 
 
 
-        <p><b>Output</b>: self.r_limiter, a numpy array with the radial coordinates of the vessel limits
+        output: self.r_limiter, a numpy array with the radial coordinates of the vessel limits
 
                 self.z_limiter, a numpy array with the vertical coordinates of the vessel limits
 
@@ -652,7 +660,7 @@
 
 
 
-        <p><b>Input</b>: filename, the name of the file to be loaded
+        Input: filename, the name of the file to be loaded
 
                ratio,    the ratio of timesteps to be filtered out to make sure
 
@@ -708,11 +716,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        input: self,
 
 
 
-        <p><b>Return</b>: electron_advecton_mw, a numpy array with the ion advection term for
+        return: electron_advecton_mw, a numpy array with the ion advection term for
 
                 each point in space and time [MW].
 <h4>Parameters</h4>
@@ -746,11 +754,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        input: self,
 
 
 
-        <p><b>Return</b>: electron_conduction_mw, a numpy array with the electron conduction
+        return: electron_conduction_mw, a numpy array with the electron conduction
 
                 term for each point in space and time [MW].
 <h4>Parameters</h4>
@@ -784,11 +792,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        input: self,
 
 
 
-        <p><b>Return</b>: ion_advecton_mw, a numpy array with the ion advection term for
+        return: ion_advecton_mw, a numpy array with the ion advection term for
 
                 each point in space and time [MW].
 <h4>Parameters</h4>
@@ -822,11 +830,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        input: self,
 
 
 
-        <p><b>Return</b>: electron_conduction_mw, a numpy array with the electron conduction
+        return: electron_conduction_mw, a numpy array with the electron conduction
 
                 term for each point in space and time [MW].
 <h4>Parameters</h4>
@@ -862,11 +870,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: q_parallel_e_adv_mw, a numpy array with the electron advection part
+        return: q_parallel_e_adv_mw, a numpy array with the electron advection part
 
                                      of the parallel heat flux.
 <h4>Parameters</h4>
@@ -902,11 +910,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: q_parallel_e_cond_mw, a numpy array with the electron conduction part
+        return: q_parallel_e_cond_mw, a numpy array with the electron conduction part
 
                                       of the parallel heat flux.
 <h4>Parameters</h4>
@@ -942,11 +950,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: q_parallel_i_adv_mw, a numpy array with the ion advection part
+        return: q_parallel_i_adv_mw, a numpy array with the ion advection part
 
                                      of the parallel heat flux.
 <h4>Parameters</h4>
@@ -982,11 +990,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: q_parallel_i_cond_mw, a numpy array with the ion conduction part
+        return: q_parallel_i_cond_mw, a numpy array with the ion conduction part
 
                                       of the parallel heat flux.
 <h4>Parameters</h4>
@@ -1040,7 +1048,7 @@
 
 
 
-        <p><b>Input</b>: self,
+        input: self,
 
                field_name,  a string with the name of the field to load. The options are
 
@@ -1054,7 +1062,7 @@
 
 
 
-        <p><b>Return</b>: field_data, a numpy array with the specified field in SI units.
+        return: field_data, a numpy array with the specified field in SI units.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1074,7 +1082,7 @@
 
 
 
-        <p><b>Input</b>: self
+        Input: self
 
                fieldname, a string with the name of the field to make the video of
 
@@ -1094,7 +1102,7 @@
 
 
 
-        <p><b>Output</b>: An animation with the specified field,
+        Output: An animation with the specified field,
 
                 saved in the working directory if save_movie == True.
 <h4>Parameters</h4>
@@ -1116,7 +1124,7 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
                fieldname, a string with the name of the field to make the video of
 
@@ -1136,7 +1144,7 @@
 
 
 
-        <p><b>Output</b>: An animation with the specified field,
+        Output: An animation with the specified field,
 
                 saved in the working directory if save_movie == True.
 <h4>Parameters</h4>
@@ -1168,7 +1176,7 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
                case, a string with which lambda_q to evaluate. Can be:
 
@@ -1186,7 +1194,7 @@
 
 
 
-        <p><b>Output</b>: self.lambda_q_tot,   a float with lambda_q_tot if 'q_tot' is specified
+        Output: self.lambda_q_tot,   a float with lambda_q_tot if 'q_tot' is specified
 
                 self.lambda_q_e_adv, a float with lambda_q_e_adv if 'q_adv_e' is specified
 
@@ -1218,9 +1226,9 @@
 
 
 
-        <p><b>Input</b>: self
+        Input: self
 
-        <p><b>Output</b>: self.q_parallel_tot,   the total parallel heat flux profile in MW/m^2
+        Output: self.q_parallel_tot,   the total parallel heat flux profile in MW/m^2
 
                 self.q_parallel_e_con, the parallel heat flux profile from the
 
@@ -1260,11 +1268,11 @@
 
 
 
-        <p><b>Input</b>:  self,
+        Input:  self,
 
 
 
-        <p><b>Output</b>: self.n_lcfs,       a float with the average density at the LCFS
+        Output: self.n_lcfs,       a float with the average density at the LCFS
 
                 self.te_lcfs_ev,   a float with the the electron temperature at the LCFS in eV
 
@@ -1306,11 +1314,11 @@
 
 
 
-        <p><b>Input</b>:  self,
+        Input:  self,
 
 
 
-        <p><b>Output</b>: self.probe_position,  a dictionary with the probename as the key and a list
+        Output: self.probe_position,  a dictionary with the probename as the key and a list
 
                                       with the radial and poloidal position of the synthetic probes
 
@@ -1338,11 +1346,11 @@
 
 
 
-        <p><b>Input</b>:  self,
+        Input:  self,
 
 
 
-        <p><b>Output</b>: self.n_probes, a numpy array with the probe profile data
+        Output: self.n_probes, a numpy array with the probe profile data
 
                                for the density
 
@@ -1374,9 +1382,9 @@
 
 
 
-        <p><b>Input</b>:  self
+        Input:  self
 
-        <p><b>Output</b>: self.n_2d, the 2D field of the density in SI units
+        Output: self.n_2d, the 2D field of the density in SI units
 
                 self.pe_2d, the 2D field of the electron pressure in SI units
 
@@ -1467,11 +1475,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: log(Lambda_coulomb), the plasma coulomb logarithm.
+        return: log(Lambda_coulomb), the plasma coulomb logarithm.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1501,11 +1509,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: lambda_debye, the plasma debye length.
+        return: lambda_debye, the plasma debye length.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1537,11 +1545,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: omega_ci, the ion sound speed at electron temperature.
+        return: omega_ci, the ion sound speed at electron temperature.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1571,11 +1579,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: rho_s, the ion gyroradius at electron temperature.
+        return: rho_s, the ion gyroradius at electron temperature.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1605,11 +1613,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: c_s, the ion sound speed at electron temperature.
+        return: c_s, the ion sound speed at electron temperature.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1629,11 +1637,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: lcfs_index, an integer with the index of the LCFS.
+        return: lcfs_index, an integer with the index of the LCFS.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1653,11 +1661,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: wall_index, an integer with the index of where the wall region starts.
+        return: wall_index, an integer with the index of where the wall region starts.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1679,11 +1687,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: x_axis_probes_rhos, a numpy array with the synthetic probe positions.
+        return: x_axis_probes_rhos, a numpy array with the synthetic probe positions.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1703,11 +1711,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: x_axis, a numpy array with the radial positions of the grid points [rho_s].
+        return: x_axis, a numpy array with the radial positions of the grid points [rho_s].
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1727,11 +1735,11 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
 
 
-        <p><b>Return</b>: y_axis, a numpy array with the poloidal positions of the grid points [rho_s].
+        return: y_axis, a numpy array with the poloidal positions of the grid points [rho_s].
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -1753,13 +1761,13 @@
 
 
 
-        <p><b>Input</b>: self,
+        Input: self,
 
                file, the loaded HESEL .hdf5 file
 
 
 
-        <p><b>Output</b>: self.n_x,              an integer with the number of radial grid points
+        Output: self.n_x,              an integer with the number of radial grid points
 
                 self.n_y,              an integer with the number of poloidal grid points
 
@@ -1932,7 +1940,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -1962,7 +1972,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         heat_power : float
 
@@ -1992,7 +2004,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         _s_global : list or 1-by-n numpy array
 
@@ -2018,7 +2032,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         _s : list or 1-by-n numpy array
 
@@ -2044,7 +2060,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -2068,7 +2086,9 @@
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         s_in : list or 1-by-n numpy array
 
@@ -2076,7 +2096,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -2100,7 +2122,9 @@
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         radius_in : float
 
@@ -2108,7 +2132,9 @@
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         None.
 
@@ -2304,13 +2330,13 @@
 
 
 
-            <p><b>Input</b>: Time, time variable
+            input: Time, time variable
 
                    Vec,  vector of the form [r, phi, z, v_r, v_phi, v_z]
 
 
 
-            <p><b>Return</b>: DVecDt, the right-hand side of the ode to solve.
+            return: DVecDt, the right-hand side of the ode to solve.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -2334,13 +2360,13 @@
 
 
 
-            <p><b>Input</b>: Time, time variable
+            input: Time, time variable
 
                    Vec,  vector of the form [r, phi, z, v_para, moment]
 
 
 
-            <p><b>Return</b>: DVecDt, the right-hand side of the ode to solve.
+            return: DVecDt, the right-hand side of the ode to solve.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -2362,13 +2388,13 @@
 
 
 
-            <p><b>Input</b>: l_dist, np.array with the distance along the magnetic field-line
+            input: l_dist, np.array with the distance along the magnetic field-line
 
                    x_vec,  vector with the R, phi and Z initial positions
 
 
 
-            <p><b>Return</b>: intersect_wall, returns 0 if any wall surface is intersected,
+            return: intersect_wall, returns 0 if any wall surface is intersected,
 
                                     otherwise returns a float (the event function of
 
@@ -2396,13 +2422,13 @@
 
 
 
-            <p><b>Input</b>: l_dist, np.array with the distance along the magnetic field-line
+            input: l_dist, np.array with the distance along the magnetic field-line
 
                    x_vec,  vector with the R, phi and Z initial positions
 
 
 
-            <p><b>Return</b>: intersect_wall, returns 0 if any wall surface is intersected,
+            return: intersect_wall, returns 0 if any wall surface is intersected,
 
                                     otherwise returns a float (the event function of
 
@@ -3013,7 +3039,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         v_1 : 2-x-1 np.array
 
@@ -3025,7 +3053,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         angle : float
 
@@ -3053,7 +3083,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     v_1_vectors : 2-x-1 np.array
 
@@ -3065,7 +3097,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     angle : float
 
@@ -3123,7 +3157,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     b_pol : cherab.core.math.Interpolate2DCubic
 
@@ -3143,7 +3179,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     f_x : float
 
@@ -3173,7 +3211,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     x_axis_omp : n-x-1 np.array
 
@@ -3191,7 +3231,9 @@ assert((x + y * 2).swap() == y + x * 2)
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     divertor_map : dictionary
 
@@ -3265,7 +3307,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: func1, a numpy array with the two numpy arrays corresponding to x and y
+    input: func1, a numpy array with the two numpy arrays corresponding to x and y
 
                   for the first function
 
@@ -3275,7 +3317,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Return</b>: (i, j), a tuple where
+    return: (i, j), a tuple where
 
                     i is a numpy array with the indices for the
 
@@ -3375,7 +3417,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: func1, a numpy array with the two numpy arrays corresponding to x and y
+    input: func1, a numpy array with the two numpy arrays corresponding to x and y
 
                   for the first function
 
@@ -3385,7 +3427,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Return</b>: i,    a numpy array of floats with the sum of the indices and distances
+    return: i,    a numpy array of floats with the sum of the indices and distances
 
                   [0; 1[ to the intersections of func1
 
@@ -3418,11 +3460,11 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: file_name,    a string with the .pickle file to load, e.g. 'fiesta/eq_0002'
+    Input: file_name,    a string with the .pickle file to load, e.g. 'fiesta/eq_0002'
 
 
 
-    <p><b>Return</b>: pickle_dict, the dictionary stored in the .pickle file.
+    Return: pickle_dict, the dictionary stored in the .pickle file.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -3462,7 +3504,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: x_vec_at_omp,  a numpy array with the radial points at the OMP where
+    Input: x_vec_at_omp,  a numpy array with the radial points at the OMP where
 
                           we want the mapping to start
 
@@ -3474,7 +3516,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Return</b>: field_line_dict, a python dictionary with the radial position from the OMP in m
+    return: field_line_dict, a python dictionary with the radial position from the OMP in m
 
                              as the key and the field-line dictionary with the R, phi
 
@@ -3503,7 +3545,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: midplane_model, a string with the type of model to use for the heat-flux
+    Input: midplane_model, a string with the type of model to use for the heat-flux
 
                            evaluation
 
@@ -3511,7 +3553,7 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Return</b>: footprint,     an object of the midplane_model class specified.
+    return: footprint,     an object of the midplane_model class specified.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -3553,13 +3595,13 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>:  parser, an argparse.ArgumentParser object for parsing the terminal input
+    Input:  parser, an argparse.ArgumentParser object for parsing the terminal input
 
             arg,    a terminal input with the file to load
 
 
 
-    <p><b>Return</b>: open(arg, 'r'), an open file handle if file exists, else -1.
+    return: open(arg, 'r'), an open file handle if file exists, else -1.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
@@ -3582,11 +3624,11 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Input</b>: none
+    Input: none
 
 
 
-    <p><b>Return</b>: physics_constants, a dictionary with a series of physics constants
+    return: physics_constants, a dictionary with a series of physics constants
 
             in SI units.
 <h4>Parameters</h4>
@@ -3639,7 +3681,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     x_pos_omp : n-by-1 np.array
 
@@ -3675,7 +3719,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     q_surf : n-by-1 np.array
 
@@ -3712,7 +3758,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-        <p><b>Parameters</b>:
+        Parameters
+
+        ----------
 
         v1 : 2-x-1 np.array
 
@@ -3724,7 +3772,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-        <p><b>Returns</b>:
+        Returns
+
+        -------
 
         angle : float
 
@@ -3756,7 +3806,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     v_1_vectors : n-x-1 list of 2-x-1 np.arrays
 
@@ -3768,7 +3820,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     angles : n-x-1 np.array
 
@@ -3808,7 +3862,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     b_pol : cherab.core.math.Interpolate2DCubic
 
@@ -3828,7 +3884,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     f_x : float
 
@@ -3858,7 +3916,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Parameters</b>:
+    Parameters
+
+    ----------
 
     x_axis_omp : n-x-1 np.array
 
@@ -3876,7 +3936,9 @@ Get the named long option from the command line without modifying the command li
 
 
 
-    <p><b>Returns</b>:
+    Returns
+
+    -------
 
     divertor_map : dictionary
 
@@ -4004,7 +4066,7 @@ Get the named long option from the command line without modifying the command li
 
     :param str id: A unique string identifier for the resource.
 
-    :<p><b>Return</b>: The path to the selected resource.
+    :return: The path to the selected resource.
 <h4>Parameters</h4>
 <table cellpadding=10>
 <tr><th>Name<th>Description
