@@ -12,6 +12,7 @@ rather than the band aid of rebranding.
   (c) Better constants - the current solution using subs leads to very weird results
   (d) const a = ..., b = a + ..., c = 2 *a + b ...  just like Javascript
   (e) Make semicolons optional like Javascript as this greatly reduces the line noise that disfigures otherwise clean Perl code
+  (f) Allow: 'if ($a == $b) $a++' and similar variants fcr 'for' and 'while' 
  (7) Perl monks must not be disparged - they have done sterling work for decades - if 
  you want their web site modernized offer them some incentives to do so.  
  (8) I assume Perl is a trademark? Please start suing some people (like Google) who are using the trademark inappropriately.
