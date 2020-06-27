@@ -1,0 +1,22 @@
+(1) Please make it easy to contact people at the Perl foundation by listing their email addresses prominently.
+(2) Perl is a language that each developer can shape to their own level of expertise through the use of pragmata. 
+This leads to long lists of boiler plate 'use' statements at the front of each program.  These choices should be
+settable once in an external options file.
+(3) It should be possible for people to vote on Perl policy.
+(4) Perl 7 will just produce another Perl 6. Much better to look for solutions like (2) above that resolve the issues through code
+rather than rebranding: "united in diversity".
+(5) ActiveState has too much involvement with Perl and is slowly dividing our efforts.
+(6) We need more pragmata for instance:
+  (a) Swap -> and .
+  (b) Define new dyadic operators not redefine exsting dyadic operators
+  (c) Beter constants - the current solution using subs leads to very weird results
+  (d) const a = ..., b = a + ..., c = 2 *a + b ...  just like Javascript
+  (e) Make semicolons optional like Javascript as this greatly tegh line noise that disfigures othersie clean Perl code
+ (7) Perl monks must not be disparged - they have done sterling work for decades - if 
+ you want their web site modernized offer them some incentives to do so.  
+ (8) I assume Perl is a trademark? Please start suing some people (like Google) who are using the trademark inappropriately.
+ (9) Get Perl into web browsers.
+ (11) Create a proper debugger.
+ (12) Very slowly start removing CPAN modules which are not being actively supported.
+ (13) Fix the documentation on perldoc - currently it is siddled with bugs like: 
+  
