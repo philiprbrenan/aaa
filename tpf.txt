@@ -4,14 +4,14 @@ This leads to long lists of boiler plate 'use' statements at the front of each p
 settable once in an external options file.
 (3) It should be possible for people to vote on Perl policy.
 (4) Perl 7 will just produce another Perl 6. Much better to look for solutions like (2) above that resolve the issues through code
-rather than rebranding: "united in diversity".
+rather than the band aid of rebranding.
 (5) ActiveState has too much involvement with Perl and is slowly dividing our efforts.
 (6) We need more pragmata for instance:
-  (a) Swap -> and .
-  (b) Define new dyadic operators not redefine exsting dyadic operators
-  (c) Beter constants - the current solution using subs leads to very weird results
+  (a) Swap '->' and '.'
+  (b) Define new dyadic operators not just redefine exsting dyadic operators
+  (c) Better constants - the current solution using subs leads to very weird results
   (d) const a = ..., b = a + ..., c = 2 *a + b ...  just like Javascript
-  (e) Make semicolons optional like Javascript as this greatly tegh line noise that disfigures othersie clean Perl code
+  (e) Make semicolons optional like Javascript as this greatly reduces the line noise that disfigures otherwise clean Perl code
  (7) Perl monks must not be disparged - they have done sterling work for decades - if 
  you want their web site modernized offer them some incentives to do so.  
  (8) I assume Perl is a trademark? Please start suing some people (like Google) who are using the trademark inappropriately.
@@ -24,8 +24,11 @@ rather than rebranding: "united in diversity".
     __SUB__
     - the current subroutine, or C if not in a subroutine 
 
-andno matter how many times one points out this defect nothing is done about it.
- (14) The perld doc search function is absolutely useless - duckduckgo is much better at searching perl documnatation.  Please get rid of this pointless feature.
+and no matter how many times one points out this defect nothing is done about it.
+ (14) The perld doc search function is useless - duckduckgo is much better at searching perl documentation.  Please get rid of this pointless feature as it amkes Perl look ineffective.
  (15) Perl functions is full of funcations like: getnetent which no ever uses yet they confuse the docuemntation for new users.  These functions should be in a separate module.
  (16) The perl decision making process is remote from the people who use perl every day: who decided that there was to be a Perl 7? As you have failed to ask the people for their opinion, so the people will deny you their support - just like Perl 6.
+ (19) Try documenting an error involving __SUB__ using markdown on GitHUb issues and you will be surprised just how hard it is.
+ (20) The core Perl deveopers must be made much more publicly accessable and publicly accountable to the people - at the moment they do what ever they want without regard to what is truly required.
+ (21) Create a pragma that makes $ the default sigil rather than &  The current configuration makes it difficult to treat functions as first class objects. 
  
