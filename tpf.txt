@@ -18,5 +18,14 @@ rather than rebranding: "united in diversity".
  (9) Get Perl into web browsers.
  (11) Create a proper debugger.
  (12) Very slowly start removing CPAN modules which are not being actively supported.
- (13) Fix the documentation on perldoc - currently it is siddled with bugs like: 
-  
+ (13) Fix the documentation on perldoc - currently it is riddled with bugs like: 
+ 
+ S
+    __SUB__
+    - the current subroutine, or C if not in a subroutine 
+
+andno matter how many times one points out this defect nothing is done about it.
+ (14) The perld doc search function is absolutely useless - duckduckgo is much better at searching perl documnatation.  Please get rid of this pointless feature.
+ (15) Perl functions is full of funcations like: getnetent which no ever uses yet they confuse the docuemntation for new users.  These functions should be in a separate module.
+ (16) The perl decision making process is remote from the people who use perl every day: who decided that there was to be a Perl 7? As you have failed to ask the people for their opinion, so the people will deny you their support - just like Perl 6.
+ 
