@@ -26,12 +26,12 @@ rather than the band aid of rebranding.
 
 and no matter how many times one points out this defect nothing is done about it.
  (14) The perld doc search function is useless - duckduckgo is much better at searching perl documentation.  Please get rid of this pointless feature as it amkes Perl look ineffective.
- (15) Perl functions is full of funcations like: getnetent which no ever uses yet they confuse the docuemntation for new users.  These functions should be in a separate module.
+ (15) Perl functions is full of functions like: getnetent which no ever uses yet they confuse the docuemntation for new users.  These functions should be in a separate module.
  (16) The perl decision making process is remote from the people who use perl every day: who decided that there was to be a Perl 7? As you have failed to ask the people for their opinion, so the people will deny you their support - just like Perl 6.
  (19) Try documenting an error involving __SUB__ using markdown on GitHUb issues and you will be surprised just how hard it is.
  (20) The core Perl deveopers must be made much more publicly accessable and publicly accountable to the people - at the moment they do what ever they want without regard to what is truly required.
  (21) Create a pragma that makes $ the default sigil rather than &  The current configuration makes it difficult to treat functions as first class objects.
- (22) Pragma to simplify the language to a point where it can be transpiled to Java or JavaScript or C.
+ (22) Pragma to simplify the language to a point where it can be transpiled to Java or JavaScript or C and so we can write better IDEs for Perl.
  (23) Remove experimental warniongs even on new pragma unless they are specifically requested.  Switching the feature on is warning enough under normal circumstances. 
  (24) The TPF web page is useless- the people remote and uncontactable - no photos - it should be possible to click a link and video conference with these people promptly.
  (25) I cannot imagine that any-one actually donates throughteh TPF web page as it simply demands money without taking the time to explain why this is a good idea.
