@@ -36,5 +36,9 @@ and no matter how many times one points out this defect nothing is done about it
  (24) The TPF web page is useless- the people remote and uncontactable - no photos - it should be possible to click a link and video conference with these people promptly.
  (25) I cannot imagine that any-one actually donates throughteh TPF web page as it simply demands money without taking the time to explain why this is a good idea.
  (26) Provide a web page that allows people to write and execute Perl code immediately - with suitable pragmata turned on to give them a modern version of the language.
- 
+  (27) provide video conferencing on CPAN so if some-one is stuck with a module they can ask the developer of that module what to do.
+  (28) set up a mentoring program so that expereinced developers can teach new developers.  Like Perl Monks but for a longer duration.
+  (29) Improve Perl jobs so that any job mentioned on any web site any where in the world that involes Perl is also visible through Perl jobs - and then get rid of it with fanfare when the job is filled.
+  (30) Please do not standardize on any one object oriented system - thay all have many failings.
+  (31) "Strength and unity from our diversity" :  Perl5 must incrementally recapture the leading edge it surrendered to Perl 6 so that 5 becomes the most modern language of them all.
  
