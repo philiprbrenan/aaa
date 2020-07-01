@@ -45,3 +45,9 @@ responsive employers and discourage unresponsive employers.
   (31)  "say" should write by default to STDERR as it writes immediately whereas the current default STDOUT buffers which causes confusion.
   (32) "Strength and unity from our diversity" :  Perl5 must incrementally recapture the leading edge it surrendered to Perl 6 so that 5 becomes the most modern language of them all.
  
+ 
+ (33) Pragma to infer sigil fom context
+ (34) Pragma to make sub a{}; my $a = a; assign a reference to the sub.
+ (35) Pragma to make function() mean my sub aaa()   
+ 
+ 
